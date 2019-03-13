@@ -26,7 +26,14 @@
                 <param name="android-package" value="oracle.jet.emm.EmmAppConfig"/>
             </feature>
         </config-file>
-
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.content.APP_RESTRICTIONS"/>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data
+                    android:name="android.content.APP_RESTRICTIONS"
+                    android:resource="@xml/app_restrictions" />
+        </config-file>
         <source-file src="src/android/EmmAppConfig.java" target-dir="src/oracle/jet/emm" />
     </platform>
 

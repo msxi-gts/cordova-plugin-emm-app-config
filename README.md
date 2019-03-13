@@ -11,7 +11,7 @@ Although the object is in the global scope, it is not available until after the 
 
 ## Installation
 
-    cordova plugin add cordova-plugin-emm-app-config
+    cordova plugin add https://github.com/msxi-gts/cordova-plugin-emm-app-config.git --variable ANDROID_RESTRICTIONS_XML_PATH="{path to your app_restrictions.xml file}"
 
 ## Methods
 
